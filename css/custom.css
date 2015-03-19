@@ -7,10 +7,11 @@ font-family:".HiraKakuInterface-W1",'Lucida Grande',
 }
 /* Override base .btn styles */
 /* Apply text and background changes to three key states: default, hover, and active (click). */
-#accordion-group0{background-color:  #ea3b13;}/* 燃やす */
-#accordion-group1{background-color:  #733b96;}/* 燃やさない */
-#accordion-group2{background-color:  #77ae1f;}/* 資源 */
-#accordion-group3{background-color:  #2dc7aa;}/* びん */
+/* #ea3b13;}/* 燃やす  #733b96;}/* プラスチック  #77ae1f;}/* 有害  #2dc7aa;}/* びん */
+#accordion-group0{background-color:  #733b96;}/* 燃やす */
+#accordion-group1{background-color:  #ea3b13;}/* 燃えるごみ */
+#accordion-group2{background-color:  #2dc7aa;}/* 有害 */
+#accordion-group3{background-color:  #77ae1f;}/* びん */
 
 .accordion-group{margin-bottom:0;border:0;border-radius:0}
 
@@ -51,7 +52,7 @@ a.accordion-toggle-top{
 
 a.accordion-toggle-top{
 	color: #000000;
-	height: 22px;
+	height: 40px;
 	text-align: center;
 	margin: 0 auto;
 	display: block;
@@ -103,6 +104,9 @@ a,a:hover{
 
 .initials {
 	color: #ffffff;
+}
+.note{
+	font-size: 10px;
 }
 #help{
 	margin-left: 5px;
