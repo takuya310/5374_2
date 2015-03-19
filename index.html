@@ -2,12 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="5374.jp 奈良県生駒市版" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://ikoma.5374.jp/" />
-    <meta property="og:description" content="Code for Kanazawaの作った5374.jpの奈良県生駒市版です。5374.jpを使えば、あなたの地域で、いつ、どのゴミが回収されるのか、簡単に知る事ができます。" />
-    <meta property="og:image" content="http://ikoma.5374.jp/img/ikoma_ogp.png" width="720" height="540" />
-    <title>5374(ｺﾞﾐﾅｼ).jp 奈良県生駒市版</title> 
+    <title>5374(ｺﾞﾐﾅｼ).jp</title> 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
@@ -16,42 +11,9 @@
     <link href="css/custom.css" rel="stylesheet" media="screen" />
   </head>
   <body>
-  <style id="accordion-style" type="text/css"></style>
   <div id="accordion"></div>
   <select class="form-control" id="select_area"></select>
   <div class="accordion" id="accordion3">
-    <div class="accordion-group-top">
-      <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">大型ごみ・燃えないごみ</a>
-      </div>
-      <div id="collapse3_1" class="accordion-body collapse">
-        <div class="accordion-inner">
-          <div id="help">
-大型ごみと燃えないごみは、電話申し込みにより収集いたします。<a href="tel:0743855374" style="color:#FF0000;">0743-85-5374</a>へ申し込んでください（月に1回10点まで）。<br />
-受付は12月29日〜1月3日と祝日を除いた月曜〜土曜日、午前8時〜午後4時までです。<br />
-収集日は電話受け付けのときにお知らせします。収集日の当日朝午前8時までに出してください。<br />
-※冷蔵庫（冷凍庫）、洗濯機、衣類乾燥機、テレビ、エアコン、パソコン（本体・モニター）は出せません。
-            <h2>大型ごみ</h2>
-燃える部分と燃えない部分は分けてください。<br />
-・家具<br />
-・カーペット<br />
-・ふとん<br />
-・ハンガー<br />
-・自転車<br />
-・ストーブ（電池ははずし、灯油は必ず抜いてください）
-            <h2>燃えないごみ</h2>
-ドライヤー、やかん等の小型のものは、電化製品と電化製品以外に分けて袋に入れてください。1袋1点となります。<br />
-・かさ<br />
-・フライパン<br />
-・やかん<br />
-・リモコン<br />
-・ドライヤー
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
     <div class="accordion-group-top">
       <div class="accordion-heading">
         <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_0">5374.jpについて</a>
@@ -74,7 +36,7 @@ Code for Kanazawaでは、先ずは正しいゴミの捨て方に注目しまし
             <p>お住まいの地域を選択することで、ゴミ収集日が自動的に更新されます。</p>
             <div id="caption">
               <h4>提供されるゴミ情報について</h4>
-              <p>生駒市が公開しているデータを元に、CODE for IKOMAがアプリに実装しました。</p>
+              <p>金沢市が公開しているデータからCfKが独自に解析し、アプリに実装しました。</p>
               <h4>ライセンスについて</h4>
               <p>本アプリの著作権はCode for Kanazawaに帰属します。</p>
             </div>
@@ -90,21 +52,13 @@ CfKは市民のための組織です。行政や民間企業の影響を受け�
 <a href="http://www.codeforkanazawa.org/" style=" color: #FF0000;text-decoration: underline;">http://www.codeforkanazawa.org/</a>
               </p>
             </div>
-            <div id="cfk">
-              <h3>CODE for IKOMAについて</h3>
-              <p>CODE for IKOMAは、奈良県生駒市をITを活用してより良くしていくためのコミュニティです。<br />
-                生駒市の地域課題解決・地域活性化に取り組んでいきます。幅広い年代の方々が参加する、フラットな組織を目指しています。<br /><br />
-                Facebookページ<br />
-                <a href="https://www.facebook.com/code4ikoma" style=" color: #FF0000;text-decoration: underline;">https://www.facebook.com/code4ikoma</a>
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- JavaScript plugins (requires jQuery) -->
-  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) 
@@ -113,14 +67,14 @@ CfKは市民のための組織です。行政や民間企業の影響を受け�
   <!-- ブックマークお勧めポップアップ追加-->
   <script src="js/bookmark-bubble/bookmark_bubble.min.js"></script>
   <script src="js/bookmark-bubble/example/example.min.js"></script>
-  <script src="js/setting.js"></script>
+
   <script src="js/script.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-49018337-1', '5374.jp');
+  ga('create', 'UA-43926409-1', '5374.jp');
   ga('send', 'pageview');
   </script>
   </body>
