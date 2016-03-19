@@ -115,3 +115,25 @@ a,a:hover{
 	text-align: center;
 	font-size: 20px;
 }
+
+.date1 {
+	text-align: right;
+	padding-right: 2%;
+	margin-bottom: auto;
+}
+.attention01 {
+	padding-right: 5%;
+	margin-top:	auto;	
+}
+table {
+	border-collapse: collapse;
+	border:1px solid #808080;
+	color:#000000;
+}
+th {
+	background-color:#F1F1F1;
+	text-align: center;
+}
+th,tr,td {
+	border:1px solid #808080;
+}
