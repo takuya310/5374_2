@@ -28,6 +28,7 @@ var AreaModel = function() {
           ごみの種類による休止期間判定
           フラグがONの場合は休みではない
         */
+        alert(description.label);
         if (description.label == "燃えるごみ") {
           if (this.center.moeru == 1) {
             return false;
