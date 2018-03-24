@@ -22,7 +22,7 @@ var AreaModel = function() {
   this.isBlankDay = function(currentDate) {
     var period = [this.center.startDate, this.center.endDate];
 
-    alert(this.label);
+    alert(this.trash.description);
     if (period[0].getTime() <= currentDate.getTime() &&
       currentDate.getTime() <= period[1].getTime()) {
         /**
