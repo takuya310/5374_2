@@ -22,13 +22,13 @@ var AreaModel = function() {
   this.isBlankDay = function(currentDate) {
     var period = [this.center.startDate, this.center.endDate];
 
+    alert(description.label);
     if (period[0].getTime() <= currentDate.getTime() &&
       currentDate.getTime() <= period[1].getTime()) {
         /**
           ごみの種類による休止期間判定
           フラグがONの場合は休みではない
         */
-        alert(description.label);
         if (description.label == "燃えるごみ") {
           if (this.center.moeru == 1) {
             return false;
