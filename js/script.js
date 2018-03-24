@@ -24,6 +24,23 @@ var AreaModel = function() {
 
     if (period[0].getTime() <= currentDate.getTime() &&
       currentDate.getTime() <= period[1].getTime()) {
+        /**
+          ごみの種類による休止期間判定
+          フラグがONの場合は休みではない
+        */
+        if (description.label == "燃えるごみ") {
+          if (this.center.moeru == 1) {
+            return false;
+          }
+        } else if (description.label == "プラスチック") {
+          if (this.center.pura == 1) {
+            return false;
+          }
+        } else if (description.label == "びん・缶・ペットボトル・われもの・有害ごみ") {
+          if (this.center.binkan == 1) {
+            return false;
+          }
+        }
       return true;
     }
     return false;
@@ -238,6 +255,10 @@ var TrashModel = function(_lable, _cell, remarks) {
 }
 /**
 センターのデータを管理します。
+以下のフラグは、1（ON）の場合には休みでも回収する
+moeru:燃えるごみ回収フラグ
+pura:プラスチックごみ回収フラグ
+binkan:びん・缶・ペットボトル・われもの・有害ごみ回収フラグ
 */
 var CenterModel = function(row) {
   function getDay(center, index) {
@@ -248,6 +269,9 @@ var CenterModel = function(row) {
   this.name = row[0];
   this.startDate = getDay(row, 1);
   this.endDate = getDay(row, 2);
+  this.moeru = row[3];
+  this.pura = row[4];
+  this.binkan = row[5];
 }
 /**
 * ゴミのカテゴリを管理するクラスです。
